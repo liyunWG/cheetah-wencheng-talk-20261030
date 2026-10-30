@@ -1,0 +1,17 @@
+{
+  "oxford": {
+    "file": "assets/revision/oxford.jpg",
+    "title": "良禽擇木而棲\n 頂尖學子 選擇獵豹",
+    "url": "https://cheetah-math-website.vercel.app/article-cheetah-elite-104.html"
+  },
+  "caltech": {
+    "file": "assets/revision/caltech.png",
+    "title": "賀KAS吳玲誼同學\n 錄取 加州理工學院",
+    "url": "https://cheetah-math-website.vercel.app/article-cheetah-elite-44.html"
+  },
+  "stanford": {
+    "file": "assets/revision/stanford.jpg",
+    "title": "獵豹學子\n 俊彩星馳",
+    "url": "https://cheetah-math-website.vercel.app/article-cheetah-elite-97.html"
+  }
+}

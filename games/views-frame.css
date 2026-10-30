@@ -1,0 +1,53 @@
+:root{--gold:#c9a76b;--gold-soft:#e7d3a6;--navy:#101a2b;--navy-soft:#ebe8df;--bg:#101a2b;--text:#253044;--muted:#5a6473;--line:#c9a76b55}
+html,body{margin:0;min-height:100%;background:#101a2b;overscroll-behavior:none}
+body:before{display:none}.play-wrap,.play-wrap:has(.pgv-card){width:100%;max-width:none;margin:0;padding:0}
+.pl-lesson{border:1px solid #c9a76b77;background:#f7f3eb;border-radius:16px;box-shadow:none;overflow:hidden;margin:0;min-height:calc(100svh - 2px)}
+.pl-head{background:#101a2b;color:#e7d3a6;border-bottom:1px solid #c9a76b66}.pl-head__title{font-weight:600;letter-spacing:2px}.pl-head__back{color:#e7d3a6;background:#1c2b43;border-color:#c9a76b66}
+.pl-credit{font-size:11px;background:#101a2b;color:#aeb9c5;border-top:1px solid #c9a76b33;padding:5px;text-align:center}
+.pgm-howto{background:#ebe8df;font-size:18px;line-height:1.8}.pgm-level{border-radius:12px;min-height:105px}.pgm-level__body b{font-size:23px}.pgm-level__body{font-size:17px}.pgm-level__go{color:#89683b}.pgm-picker{max-width:1000px;margin:20px auto;width:100%;gap:15px}
+.pgm-body{padding:16px}.pgv-scwrap{border-color:#c9a76b66}.pgv-btn,.pgv-key,.pgv-m,.pgv-clr{border-color:#c9a76b88;min-height:48px}.pgv-sub{background:#101a2b}.pgv-msg{font-size:16px;min-height:30px}.pgv-key.sel{outline-color:#c9a76b}.pgv-q{color:#89683b}.pgv-view{min-height:44px}
+@media(min-width:900px){
+.pgv-card .pl-body.pgm-body{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);grid-template-rows:minmax(280px,1fr) auto auto;gap:12px 20px;align-items:stretch;min-height:calc(100svh - 105px);padding:12px 20px}
+.pgv-card .pgv-scwrap{grid-column:1;grid-row:1;height:clamp(280px,calc(100svh - 295px),490px)}
+.pgv-card .pgv-top{grid-column:2;grid-row:1;align-self:center;display:flex;flex-direction:column;gap:15px;align-items:center}.pgv-card .pgv-info{width:100%;max-width:390px;align-items:center;display:flex;flex-wrap:wrap;justify-content:center;gap:14px}
+.pgv-card .pgv-pad{grid-column:1;grid-row:2}.pgv-card .pgv-acts{grid-column:2;grid-row:2;align-items:center}.pgv-card .pgv-msg{grid-column:1/-1;grid-row:3}
+.pgv-vw svg{width:clamp(95px,11vw,155px);height:clamp(118px,13vw,192px)}.pgv-key{min-height:55px}.pgv-acts{gap:15px}.pgv-btn{min-height:65px;font-size:20px}.pgv-time{font-size:26px}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+.views-teacher-controls{position:sticky;bottom:0;z-index:30;background:#101a2bf5;border-top:1px solid #c9a76b77;padding:8px 16px;display:flex;gap:15px;align-items:center;justify-content:space-between;color:#e7d3a6;backdrop-filter:blur(15px)}
+.views-teacher-buttons{display:flex;gap:9px;flex-shrink:0}.views-teacher-buttons button{min-height:48px;min-width:95px;font:600 15px "Microsoft JhengHei",sans-serif;color:#e7d3a6;background:#1c2b43;border:1px solid #c9a76b77;border-radius:9px;padding:8px 12px;cursor:pointer}.views-teacher-buttons button:hover{background:#34415a}.views-teacher-buttons button:focus-visible{outline:3px solid #e7d3a6;outline-offset:2px}.views-teacher-buttons button[data-teacher-action="exit"]{background:#c9a76b;color:#101a2b}
+.views-save-status{font-size:12px;line-height:1.6;max-width:440px;color:#aeb9c5}.views-restored-complete .pgv-pad,.views-restored-complete .pgv-acts,.views-restored-complete .pgv-sc{pointer-events:none;opacity:.8}
+@media(min-width:900px){.pgv-card .pl-body.pgm-body{min-height:calc(100svh - 180px)}.pgv-card .pgv-scwrap{height:clamp(220px,calc(100svh - 370px),420px)}.pl-lesson{min-height:calc(100svh - 77px)}}
+@media(max-width:900px){.views-teacher-controls{display:block;padding:8px}.views-teacher-buttons{gap:5px;justify-content:center}.views-teacher-buttons button{min-width:0;flex:1;font-size:12px;padding:6px}.views-save-status{display:block;text-align:center;margin-top:5px;font-size:10px;max-width:none}}
+/* Keep all projections and lower controls inside the presentation viewport. */
+@media(min-width:900px){
+  html,body{height:100%;overflow:hidden}
+  .pl-lesson{height:calc(100svh - 76px);min-height:0!important;display:flex;flex-direction:column}
+  .pl-head{flex:0 0 44px;padding:6px 16px!important;min-height:44px}
+  .pl-credit{flex:0 0 19px;padding:2px;font-size:10px}
+  .pgv-card .pl-body.pgm-body{flex:1;min-height:0!important;height:calc(100svh - 139px);grid-template-rows:minmax(155px,1fr) 120px 25px;gap:7px 20px;padding:7px 18px;overflow:hidden}
+  .pgv-card .pgv-scwrap{height:100%!important;min-height:0}
+  .pgv-sc{height:100%;max-height:100%}
+  .pgv-card .pgv-top{gap:8px}
+  .pgv-vw svg{width:112px;height:138px;max-height:138px}
+  .pgv-card .pgv-info{gap:6px;max-width:none}
+  .pgv-time{font-size:20px}
+  .pgv-pad{height:120px;min-height:0;gap:6px}
+  .pgv-keys{gap:4px}
+  .pgv-key{min-height:36px;height:36px;padding:3px!important}
+  .pgv-key b{font-size:16px}.pgv-key small{font-size:10px}
+  .pgv-side{gap:4px}.pgv-m,.pgv-clr{min-height:36px;padding:5px!important;font-size:12px}
+  .pgv-msg{font-size:14px;min-height:22px;padding:2px 6px}
+  .views-teacher-controls{height:76px;position:relative;flex:none}
+}
+@media(min-width:900px){
+  .pl-lesson{height:calc(100svh - 100px)}
+  .pgv-card .pl-body.pgm-body{height:calc(100svh - 163px);grid-template-rows:minmax(155px,1fr) 188px 25px}
+  .pgv-pad{height:188px;grid-template-columns:1fr;grid-template-rows:92px 92px;gap:4px}
+  .pgv-keys{height:92px;min-height:0;grid-template-columns:repeat(9,minmax(0,1fr));grid-template-rows:92px;gap:4px;align-content:start}
+  .pgv-key{height:92px;min-height:92px}.pgv-key b{font-size:26px}.pgv-key small{font-size:13px}
+  .pgv-side{height:92px;grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:92px;gap:4px}
+  .pgv-m,.pgv-clr{min-height:92px;font-size:20px}
+  .views-teacher-controls{height:100px}.views-teacher-buttons button{min-height:90px;min-width:160px;font-size:19px}
+  .views-teacher-buttons{gap:14px}.views-save-status{max-width:350px;font-size:15px}
+}

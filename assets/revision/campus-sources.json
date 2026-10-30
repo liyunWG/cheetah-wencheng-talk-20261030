@@ -1,0 +1,82 @@
+[
+  {
+    "id": "mit",
+    "title": "Massachusetts Institute of Technology",
+    "image": "File:MIT Main Campus aerial.jpg",
+    "file": "assets/revision/mit.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/MIT_Main_Campus_aerial.jpg/1280px-MIT_Main_Campus_aerial.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "author": "<a href=\"//commons.wikimedia.org/wiki/User:Nickknack00\" title=\"User:Nickknack00\">Nick Allen</a>",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:MIT_Main_Campus_aerial.jpg"
+  },
+  {
+    "id": "stanford-campus",
+    "title": "Stanford University",
+    "image": "File:Stanford Memorial Church Interior 2.jpg",
+    "file": "assets/revision/stanford-campus.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Stanford_Memorial_Church_Interior_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "author": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/37986315@N05/\">rosarion94</a>",
+    "license": "CC BY 2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Stanford_Memorial_Church_Interior_2.jpg"
+  },
+  {
+    "id": "oxford-campus",
+    "title": "University of Oxford",
+    "image": "File:Somerville College, Oxford - Main quad, summer.JPG",
+    "file": "assets/revision/oxford-campus.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Somerville_College%2C_Oxford_-_Main_quad%2C_summer.JPG/1280px-Somerville_College%2C_Oxford_-_Main_quad%2C_summer.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "author": "<a href=\"//commons.wikimedia.org/wiki/User:Brigade_Piron\" title=\"User:Brigade Piron\">Brigade Piron</a>",
+    "license": "CC BY-SA 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Somerville_College,_Oxford_-_Main_quad,_summer.JPG"
+  },
+  {
+    "id": "tokyo",
+    "title": "University of Tokyo",
+    "image": "File:2024 Yasuda Auditorium - Tokyo University.jpg",
+    "file": "assets/revision/tokyo.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/2024_Yasuda_Auditorium_-_Tokyo_University.jpg/1280px-2024_Yasuda_Auditorium_-_Tokyo_University.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "author": "<a href=\"//commons.wikimedia.org/wiki/User:Kakidai\" title=\"User:Kakidai\">Kakidai</a>",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:2024_Yasuda_Auditorium_-_Tokyo_University.jpg"
+  },
+  {
+    "id": "peking",
+    "title": "Peking University",
+    "image": "File:Weiming lake peking university.jpg",
+    "file": "assets/revision/peking.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Weiming_lake_peking_university.jpg/1280px-Weiming_lake_peking_university.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "author": "endeneon",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Weiming_lake_peking_university.jpg"
+  },
+  {
+    "id": "tsinghua",
+    "title": "Tsinghua University",
+    "image": "File:CampusTsinghuaUniversity9.jpg",
+    "file": "assets/revision/tsinghua.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/CampusTsinghuaUniversity9.jpg/1280px-CampusTsinghuaUniversity9.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "author": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/caitriana/\">caitriana</a>",
+    "license": "CC BY-SA 2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:CampusTsinghuaUniversity9.jpg"
+  },
+  {
+    "id": "yale",
+    "title": "Yale University",
+    "image": "File:A View of the Buildings of Yale College at New Haven 1807.jpg",
+    "file": "assets/revision/yale.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/91/A_View_of_the_Buildings_of_Yale_College_at_New_Haven_1807.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "author": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Amos_Doolittle\" class=\"extiw\" title=\"w:en:Amos Doolittle\"><span title=\"American artist (1754–1832)\">Amos Doolittle</span></a> or workshop</bdi>",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:A_View_of_the_Buildings_of_Yale_College_at_New_Haven_1807.jpg"
+  },
+  {
+    "id": "princeton",
+    "title": "Princeton University",
+    "image": "File:Cannon Green and Nassau Hall, Princeton University.jpg",
+    "file": "assets/revision/princeton.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Cannon_Green_and_Nassau_Hall%2C_Princeton_University.jpg/1280px-Cannon_Green_and_Nassau_Hall%2C_Princeton_University.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "author": "Ken Lund",
+    "license": "CC BY-SA 2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Cannon_Green_and_Nassau_Hall,_Princeton_University.jpg"
+  }
+]

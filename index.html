@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#080c12">
+  <meta name="description" content="獵豹 × 文城家長說明會｜宗翰報告一與寒假課程互動簡報。">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23101a2b'/%3E%3Cpath d='M45 17H24L11 32l13 15h21M28 21l-9 11 9 11' fill='none' stroke='%23c9a76b' stroke-width='5'/%3E%3C/svg%3E">
+  <link rel="manifest" href="manifest.webmanifest">
+  <title>獵豹 × 文城｜家長說明會</title>
+  <link rel="stylesheet" href="presentation.css">
+  <link rel="stylesheet" href="motion-charts.css">
+  <link rel="stylesheet" href="motion.css">
+  <link rel="stylesheet" href="revision.css">
+  <link rel="stylesheet" href="motion-v4.css">
+  <script src="maps.js" defer></script>
+  <script src="us-states.js" defer></script>
+  <script src="content.js" defer></script>
+  <script src="timeline-core.js" defer></script>
+  <script src="media-config.js" defer></script>
+  <script src="honors-data.js" defer></script>
+  <script src="motion-charts.js" defer></script>
+  <script src="motion-content.js" defer></script>
+  <script src="revision-content.js" defer></script>
+  <script src="motion-v4-content.js" defer></script>
+  <script src="motion-v4-director.js" defer></script>
+  <script src="presentation.js" defer></script>
+</head>
+<body>
+  <main id="presentation" aria-label="獵豹科教家長講座簡報">
+    <div id="stage">
+      <header class="masthead"><a class="brand" href="#A-01" aria-label="回到 Timeline"><img src="assets/logo圖.png" alt="獵豹科教・星媽的獵豹數學AMC"></a><span id="chapter">宗翰報告一</span><span class="edition">GOLD MOTION <i>2026</i></span></header>
+      <div id="slides"></div>
+      <footer class="toolbar"><button id="contents" aria-label="開啟章節目錄"><span>▦</span> 章節目錄</button><div class="beat-controls"><button id="replay" aria-label="重播本頁動畫">↺ 重播</button><button id="show-all">定格到最後</button><button id="next-beat" class="gold-button">Ⅱ 暫停動畫</button><input class="motion-scrubber" id="scene-seek" type="range" min="0" max="1000" value="0" step="1" aria-label="本頁動畫進度"><span id="beat-count"></span></div><div class="page-controls"><button id="prev" aria-label="上一頁">←</button><span><b id="page">01</b><i> / </i><span id="total">26</span></span><button id="next" aria-label="下一頁">→</button><button id="fullscreen" aria-label="全螢幕">⛶</button></div></footer>
+      <div class="progress"><span id="progress"></span></div>
+      <button id="wake-controls" aria-label="顯示或隱藏控制列">⌘</button>
+    </div>
+  </main>
+  <dialog id="menu" aria-label="章節目錄"><div class="dialog-header"><div><img class="dialog-brand" src="assets/logo圖.png" alt="獵豹科教・星媽的獵豹數學AMC"><h2>家長說明會 · 章節目錄</h2></div><button data-close aria-label="關閉目錄">✕</button></div><div class="menu-settings"><button id="mode-toggle">預覽模式：顯示缺件註記</button><button data-honors>全部榜單圖庫</button><button id="cache-offline">準備離線素材</button><button id="pause-all">停住當前畫面</button><a href="overview.html" target="_blank" rel="noopener">場景總覽 ↗</a></div><div id="menu-items"></div><p id="offline-status" aria-live="polite"></p><p class="menu-foot">← → 上一頁／下一頁 · Space 暫停／續播動畫 · G 目錄 · F 全螢幕 · Esc 關閉。圖片檢視內不啟用翻頁。</p></dialog>
+  <dialog id="lightbox" aria-label="放大圖片"><div class="lightbox-bar"><span id="image-caption"></span><div id="image-presets"><button data-view="fit">全貌</button><button data-view="top">上段</button><button data-view="middle">中段</button><button data-view="bottom">下段</button></div><div><button id="zoom-out" aria-label="縮小圖片">−</button><button id="zoom-reset" aria-label="重設圖片大小">適合畫面</button><button id="zoom-in" aria-label="放大圖片">＋</button><button data-close aria-label="關閉圖片">✕</button></div></div><div id="image-scroll"><img id="large-image" alt="" draggable="false"></div></dialog>
+  <dialog id="detail-dialog" aria-label="素材說明"><div class="dialog-header"><h2 id="detail-title"></h2><button data-close aria-label="關閉說明">✕</button></div><div id="detail-content"></div></dialog>
+  <dialog id="honors-dialog" aria-label="完整榜單圖庫"><div class="dialog-header"><div><img class="dialog-brand" src="assets/logo圖.png" alt="獵豹科教・星媽的獵豹數學AMC"><h2>每一段努力，都值得被看見。</h2></div><button data-close aria-label="關閉榜單圖庫">✕</button></div><div class="honors-filters"><label>年份 <select id="honors-year"><option value="">全部年份</option></select></label><label>競賽／類別 <select id="honors-category"><option value="">全部類別</option></select></label><input id="honors-search" type="search" placeholder="搜尋學生、競賽或升學成果" aria-label="搜尋榜單"><span id="honors-count"></span></div><div id="honors-grid"></div><div class="honors-paging"><button id="honors-prev">← 上一批</button><span id="honors-page"></span><button id="honors-next">下一批 →</button></div><p class="honors-note">日期為原文發布日；競賽年度依原榜單。同圖、縮圖與重複檔名合併。縮圖按頁載入，點擊才開啟原圖。</p></dialog>
+  <div class="rotate-note">建議將裝置橫放，享受完整簡報體驗。</div>
+<input type="file" id="journey-file" accept="image/png,image/jpeg,image/webp" hidden>
+<nav id="full-player" aria-label="全螢幕播放控制"><button id="full-prev" aria-label="全螢幕上一頁" title="上一頁">‹</button><button id="full-play" aria-label="播放或續播" title="播放／續播">▶</button><button id="full-pause" aria-label="暫停播放" title="暫停">Ⅱ</button><input id="fullscreen-seek" type="range" min="0" max="1000" value="0" step="1" aria-label="全螢幕播放進度"><button id="full-next" aria-label="全螢幕下一頁" title="下一頁">›</button><button id="full-exit" aria-label="退出全螢幕" title="退出全螢幕">⛶</button></nav>
+</body>
+</html>
