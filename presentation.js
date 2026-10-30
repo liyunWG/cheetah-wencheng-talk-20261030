@@ -10,7 +10,7 @@ if(new URLSearchParams(location.search).has('capture'))document.body.classList.a
 const clock=new window.TimelineClock(saved.timelineMs||0);clock.repeat=!!saved.timelineRepeat;
 let current=0,raf=0,lastSave=0,controlsTimer=0,wakeLock=null,motionDirector=null;
 $('#slides').innerHTML=slides.map(s=>`<section class="slide ${s.theme||''}" data-id="${s.id}" id="${s.id}" aria-label="${s.id} ${s.title}" aria-hidden="true">${s.html}</section>`).join('');
-const sections=$$('.slide');sections.forEach(sec=>{if(sec.querySelector('.revision-photo,.poster'))sec.classList.add('own-entrance');});
+const sections=$$('.slide');sections.forEach(sec=>{if(sec.querySelector('.revision-photo,.poster,.v4-icon,.fx-entrance,.v4-card-grid>article,.v4-play-gallery article'))sec.classList.add('own-entrance');});
 for(const section of sections){if(section.querySelector(':scope > .visual-surface')||section.id==='A-01')continue;const children=[...section.children].filter(e=>!e.matches('.scene-heading,.source-line,.all-honors-button'));if(!children.length)continue;const fit=document.createElement('div');fit.className='visual-surface auto-fullscreen-surface';section.insertBefore(fit,children[0]);children.forEach(e=>fit.appendChild(e));}
 const menu=$('#menu'),lightbox=$('#lightbox'),detail=$('#detail-dialog'),honorsDialog=$('#honors-dialog');
 $('#total').textContent=String(slides.length).padStart(2,'0');
