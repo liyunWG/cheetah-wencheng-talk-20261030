@@ -13,3 +13,10 @@ body.presentation-fullscreen .poster-gallery{grid-template-rows:minmax(0,1fr)}bo
 
 /* Pages whose artwork has its own entrance: no second page-level zoom/blur, only a fade. */
 body.motion-enabled .slide.own-entrance,body.motion-enabled .slide.own-entrance.before,.slide.own-entrance,.slide.own-entrance.before{transform:none!important;filter:none!important;transition:opacity .45s,visibility .45s!important}
+
+/* Hide the stage until the first scale is applied, so an unscaled square never flashes at the bottom right. */
+html:not(.stage-ready) #stage{visibility:hidden}
+.wego-bars>div{grid-template-columns:330px 1fr 130px}.wego-bars>div>span small{display:block;font-size:.78em;opacity:.75;margin-top:2px}
+
+/* Drag the timeline picture to scrub; music follows. */
+.timeline-window{touch-action:none;cursor:grab;user-select:none;-webkit-user-select:none}.timeline-window.dragging{cursor:grabbing}.timeline-window .timeline-start,.timeline-window .timeline-start button{cursor:default}

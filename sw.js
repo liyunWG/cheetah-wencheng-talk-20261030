@@ -1,4 +1,4 @@
-const CACHE='cheetah-gold-v5';
+const CACHE='cheetah-gold-v6';
 self.addEventListener('install',event=>{event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(['./','index.html','presentation.css','presentation.js','content.js','maps.js','timeline-core.js','media-config.js','manifest.webmanifest','assets/logo.webp','motion.css','motion-charts.css','motion-charts.js','motion-content.js','motion-director.js','revision.css','revision-content.js','us-states.js','motion-v4-content.js','motion-v4.css','motion-v4-director.js'])).then(()=>self.skipWaiting()));});
 self.addEventListener('activate',event=>{event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('cheetah-gold-')&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim()));});
 self.addEventListener('message',event=>{if(event.data?.type==='claim')self.clients.claim();});

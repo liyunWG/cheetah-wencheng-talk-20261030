@@ -29,7 +29,7 @@
     s.html=s.html.replaceAll('class="revision-photo','class="revision-photo fx-entrance');
     s.motionDuration=4800;
   }
-  get('A-05-03').html=get('A-05-03').html.replaceAll('assets/revision/wego.jpg','assets/motion-v4/wego-news.jpg').replaceAll('薇閣官方115年升學成果','薇閣升學新聞原圖・Yahoo新聞／上報');
+  get('A-05-03').html=get('A-05-03').html.replaceAll('assets/revision/wego.jpg','assets/motion-v4/wego-2026.jpg').replaceAll('薇閣官方115年升學成果','薇閣2026升學新聞原圖・Yahoo新聞／鏡報');
   get('A-07-01').html=get('A-07-01').html.replaceAll('class="revision-photo','class="revision-photo fx-entrance spectacular');get('A-07-01').motionDuration=5200;
   get('A-08-01').html=get('A-08-01').html.replace('assets/artwork/calculator-abacus.webp','assets/motion-v4/calculator-glow.webp');
   slides.splice(slides.findIndex(s=>s.id==='A-08-02'),1);
@@ -82,6 +82,8 @@
   fixedImage('R2-03','第一關・開關題','switch.jpg');
   fixedImage('R2-04','第二關・三視圖','play03.jpg');
 
+  // A-05-01 (Netflix documentary) now follows A-02.
+  {const at=slides.findIndex(s=>s.id==='A-05-01'),[moved]=slides.splice(at,1);slides.splice(slides.findIndex(s=>s.id==='A-02')+1,0,moved);}
   // The deliberately removed page redirects old bookmarks to the next comparison.
   window.CHEETAH.revision.aliases['A-08-02']='A-08-03';
   window.CHEETAH.revision.motionVersion=4;

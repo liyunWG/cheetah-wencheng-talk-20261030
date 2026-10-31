@@ -327,5 +327,7 @@
   "styles.css",
   "sw.js",
   "timeline-core.js",
-  "us-states.js"
+  "us-states.js",
+  "assets/audio/walking-in-the-air.mp3",
+  "assets/motion-v4/wego-2026.jpg"
 ]
